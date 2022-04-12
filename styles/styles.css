@@ -1,0 +1,170 @@
+/* 
+Kleuren
+    #FFF    white
+    #F7F0EB off white
+    #F0F515 bright yellow 
+    #EBCB0B 
+    #E6A101 orange
+    #C47A28
+    #B94F18 orange/red
+    #A2331B
+    #80191E red
+    #5A1D1F
+    #272621 mat black
+    #000    black
+
+Fonts
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+-
+    300 light
+    400 regular
+    500 medium
+    600 semi bold
+    700 bold
+
+*/
+
+/* INHOUDSOPGAVE CSS
+Basic styling
+    */  html  /*
+    */  body  /*
+Fixed page styling
+    */  #fixedContainer  /*
+    */  #fixed-url  /*
+    */  #fixed-resolution  /*
+Starting page
+    */  header  /*
+    */  h1  /*
+    */  nav  /*
+        ul, li & a
+Line behind nav buttons
+    */  #line01 #line02  /*
+
+JavaScript -> script (index.js)
+
+*/
+
+/*__________________
+Basic styling all */
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #F7F0EB;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*___________________
+Fixed page styling */
+#fixedContainer {
+    display: flex;
+}
+
+#fixed-url {
+    position: fixed;
+    opacity: 0.7;
+    margin-top: 83vh;
+}
+/* sideways website url */
+    aside#fixed-url h6#url {
+        font-size: 1.25rem;
+        font-weight: 300;
+        font-style: italic;
+
+        margin-left: 1rem;
+
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+section aside#fixed-resolution {
+    display: flex;
+    position: fixed;
+    width: 98vw;
+    
+    opacity: 0.5;
+    align-content: flex-end;
+    flex-direction: row-reverse;
+}    
+
+#fixed-resolution {
+    margin-top: 92.5vh;
+}
+/* window resolution tracker */
+    aside#fixed-resolution h5#resolution {
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+/*______________
+Starting page */
+header {
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    margin: 7.5rem auto 0rem auto;
+    width: fit-content;
+
+    font-size: 12vw;
+    font-weight: 500;
+    
+    padding: 0rem 3%;
+    background-color: #F0F515;
+}
+
+h2 {
+    margin: 2rem auto 6rem auto;
+
+    font-size: 3.5vw;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0rem 3%;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+/* nav button */
+nav ul li a { padding: 0 0.5rem;  text-decoration: none; }
+/* nav button coloring */
+#home       { color: #000;  background-color: #E6A101; }
+#bio        { color: #fff;  background-color: #B94F18; }
+#work       { color: #fff;  background-color: #80191E; }
+#contact    { color: #fff;  background-color: #272621; }
+
+/*________________________
+Line behind nav buttons */
+#line01 {
+    margin: 0 auto;
+    margin-top: -19rem;
+    
+    height: 100rem;
+    width: 0.25rem;
+
+    z-index: -1;
+    background-color: #272621;
+}
+
+#line02 {
+    margin: 0 auto;
+    width: 1.25rem;
+    height: 0.25rem;
+    background-color: #272621;
+}

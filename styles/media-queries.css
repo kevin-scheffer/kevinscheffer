@@ -1,0 +1,55 @@
+/* Common breakpoints are
+320px — 480px for mobile devices,
+481px — 768px for iPads & tablets,
+769px — 1024px for small screens like laptop,
+1025px — 1200px for large screens like Desktops,
+and 1201px and above for extra large screens like TV. */
+
+@media only screen and (max-width: 1360px) {
+}
+/* breakpoint 
+desktop wide --> desktop */
+@media only screen and (max-width: 1280px) {
+}
+/* breakpoint
+desktop --> tablet (liggend) */
+@media only screen and (max-width: 1024px) {
+}
+/* breakpoint 
+tablet (staand) --> tablet (liggend) */
+@media only screen and (max-width: 835px) {
+}
+/* breakpoint
+tablet (staand) --> mobile */
+@media only screen and (max-width: 768px) {
+    h1 {
+        margin: 10rem auto 0rem auto;
+        width: fit-content;
+    
+        font-size: 13.5vw;
+        font-weight: 500;
+        
+        padding: 0rem 3%;
+        background-color: #F0F515;
+    }
+    
+    h2 {
+        margin: 1rem auto 10rem auto;
+    
+        font-size: 5vw;
+        font-weight: 400;
+        font-style: italic;
+        padding: 0rem 3%;
+    }
+}
+
+/* breakpoint
+mobile --> small screen */
+@media only screen and (max-width: 640px) {
+}
+
+@media only screen and (max-width: 460px) {
+}
+
+@media only screen and (max-width: 355px) {
+}
